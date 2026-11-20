@@ -1,0 +1,159 @@
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Bagian header */
+header {
+    background: linear-gradient(135deg, #075985, #0284c7);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Menu navigasi */
+nav {
+    background-color: #0c4a6e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #0284c7;
+}
+
+/* Konten utama */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #075985;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #0369a1;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+/* Bagian profil */
+.profil {
+    text-align: center;
+    padding: 45px 25px;
+}
+
+.profil h2 {
+    font-size: 28px;
+}
+
+.profil h3 {
+    font-size: 23px;
+}
+
+/* Foto profil */
+/* Foto Profil Bentuk Kotak */
+.profil img.foto-profil {
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    display: block;
+    margin: 10px auto;
+}
+/* Link */
+section a {
+    display: inline-block;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+section a:hover {
+    background-color: #075985;
+}
+
+/* Footer */
+footer {
+    background-color: #0c4a6e;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+}
